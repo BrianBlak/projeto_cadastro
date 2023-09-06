@@ -127,3 +127,7 @@ button:hover{
   border-radius: 4px;
   display: none;
 }
+
+.date-picker {
+  padding: 5px;
+}
