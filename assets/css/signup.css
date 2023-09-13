@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("../imagens/bg-signup.jpg");
+  background-image: url("../imagens/login.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
@@ -130,4 +130,5 @@ button:hover{
 
 .date-picker {
   padding: 5px;
+  transition: none;
 }
