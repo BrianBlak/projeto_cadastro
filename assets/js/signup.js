@@ -10,9 +10,9 @@ let usuario = document.querySelector('#usuario')
 let labelUsuario = document.querySelector('#labelUsuario')
 let validUsuario = false
 
-let data = document.querySelector('#data')
-let labelData = document.querySelector('#labelData')
-let validData = false
+let fone = document.querySelector('#fone')
+let labelFone = document.querySelector('#labelFone')
+let validFone = false
 
 let email = document.querySelector('#email')
 let labelEmail = document.querySelector('#labelEmail')
@@ -58,17 +58,17 @@ usuario.addEventListener('keyup', () => {
   }
 })
 
-data.addEventListener('keyup', () => {
-    if(data.value.length <= 9){
-      labelData.setAttribute('style', 'color: red')
-      labelData.innerHTML = '*Você deve ser maior de 18 anos'
-      data.setAttribute('style', 'border-color: red')
-      validData = false
+fone.addEventListener('keyup', () => {
+    if(fone.value.length <= 10){
+      labelFone.setAttribute('style', 'color: red')
+      labelFone.innerHTML = 'Contato *É Necessario o código DDD'
+      fone.setAttribute('style', 'border-color: red')
+      validFone = false
     } else {
-      labelData.setAttribute('style', 'color: green')
-      labelData.innerHTML = 'Data de Nascimento'
-      data.setAttribute('style', 'border-color: green')
-      validData = true
+      labelFone.setAttribute('style', 'color: green')
+      labelFone.innerHTML = 'Forma de contato'
+      fone.setAttribute('style', 'border-color: green')
+      validFone = true
     }
   })
 
